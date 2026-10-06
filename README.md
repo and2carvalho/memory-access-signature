@@ -3,6 +3,7 @@
 [![CI](https://github.com/and2carvalho/memory-access-signature/actions/workflows/ci.yml/badge.svg)](https://github.com/and2carvalho/memory-access-signature/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data%20%26%20figures-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23198655.svg)](https://doi.org/10.5281/zenodo.23198655)
 
 A low-cost, calibration-free signature that compresses the memory-access trace of a
 logical array into two numbers, and uses them to detect performance degradation in the
@@ -169,7 +170,8 @@ If you use this software or its data, please cite it as described in
 [`CITATION.cff`](CITATION.cff):
 
 > Antero de Carvalho, A. C. (2026). *(D, δ): a two-feature signature for memory-access
-> traces* (Version 0.1.0) [Computer software]. https://github.com/and2carvalho/memory-access-signature
+> traces* (Version 0.1.0) [Computer software]. Zenodo.
+> https://doi.org/10.5281/zenodo.23198655
 
 ## License
 

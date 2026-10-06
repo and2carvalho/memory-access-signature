@@ -29,4 +29,6 @@ license:
   - MIT
   - CC-BY-4.0
 version: "0.1.0"
+doi: "10.5281/zenodo.23198655"
+date-released: "2026-10-07"
 repository-code: "https://github.com/and2carvalho/memory-access-signature"
