@@ -1,0 +1,25 @@
+{
+  "name": "memory-access-signature",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A two-feature, calibration-free signature (D, δ) for memory-access traces: relative access density and index-trajectory drift.",
+  "license": "MIT",
+  "author": "André Cunha Antero de Carvalho",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/and2carvalho/memory-access-signature.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "atlas": "node src/build_atlas.ts",
+    "crossdomain": "node src/build_crossdomain.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.3"
+  }
+}

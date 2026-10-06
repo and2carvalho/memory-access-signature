@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2026-08-03T15:24:43.691Z",
+  "method": "cross-domain transfer of (D, δ) — non-sort workloads under sort-calibrated thresholds",
+  "densityReference": "merge/aleatorio at the same n (E_ref), identical to atlas",
+  "thresholds": {
+    "D_inflated": 5,
+    "drift_zero_band": 10
+  },
+  "params": {
+    "sizes": [
+      1000,
+      2000,
+      5000,
+      10000,
+      20000
+    ],
+    "baseSeed": 20260731,
+    "maxStored": 100000,
+    "quadCap": 20000
+  },
+  "preregistration": "docs/preregistration.md",
+  "verdicts": {
+    "H1": {
+      "pass": true,
+      "drift": 90.005,
+      "D": 0.0239
+    },
+    "H2": {
+      "pass": true,
+      "drift": -67.503,
+      "D": 0.0479
+    },
+    "H3": {
+      "pass": true,
+      "drift": 45.067,
+      "D": 957.6251
+    },
+    "H4": {
+      "pass": true,
+      "drift": -0.522,
+      "D": 0.0239
+    }
+  },
+  "rows": [
+    {
+      "workload": "linear_reduce",
+      "family": "forward-scan",
+      "hypothesis": "H1",
+      "n": 1000,
+      "events": 1000,
+      "D": 0.0349,
+      "drift": 90.09,
+      "refEvents": 28621,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "+"
+    },
+    {
+      "workload": "linear_reduce",
+      "family": "forward-scan",
+      "hypothesis": "H1",
+      "n": 2000,
+      "events": 2000,
+      "D": 0.0316,
+      "drift": 90.045,
+      "refEvents": 63271,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "+"
+    },
+    {
+      "workload": "linear_reduce",
+      "family": "forward-scan",
+      "hypothesis": "H1",
+      "n": 5000,
+      "events": 5000,
+      "D": 0.028,
+      "drift": 90.018,
+      "refEvents": 178881,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "+"
+    },
+    {
+      "workload": "linear_reduce",
+      "family": "forward-scan",
+      "hypothesis": "H1",
+      "n": 10000,
+      "events": 10000,
+      "D": 0.0258,
+      "drift": 90.009,
+      "refEvents": 387705,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "+"
+    },
+    {
+      "workload": "linear_reduce",
+      "family": "forward-scan",
+      "hypothesis": "H1",
+      "n": 20000,
+      "events": 20000,
+      "D": 0.0239,
+      "drift": 90.005,
+      "refEvents": 835400,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "+"
+    },
+    {
+      "workload": "tree_reduce",
+      "family": "root-return",
+      "hypothesis": "H2",
+      "n": 1000,
+      "events": 1998,
+      "D": 0.0698,
+      "drift": -67.556,
+      "refEvents": 28621,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "-"
+    },
+    {
+      "workload": "tree_reduce",
+      "family": "root-return",
+      "hypothesis": "H2",
+      "n": 2000,
+      "events": 3998,
+      "D": 0.0632,
+      "drift": -67.528,
+      "refEvents": 63271,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "-"
+    },
+    {
+      "workload": "tree_reduce",
+      "family": "root-return",
+      "hypothesis": "H2",
+      "n": 5000,
+      "events": 9998,
+      "D": 0.0559,
+      "drift": -67.511,
+      "refEvents": 178881,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "-"
+    },
+    {
+      "workload": "tree_reduce",
+      "family": "root-return",
+      "hypothesis": "H2",
+      "n": 10000,
+      "events": 19998,
+      "D": 0.0516,
+      "drift": -67.506,
+      "refEvents": 387705,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "-"
+    },
+    {
+      "workload": "tree_reduce",
+      "family": "root-return",
+      "hypothesis": "H2",
+      "n": 20000,
+      "events": 39998,
+      "D": 0.0479,
+      "drift": -67.503,
+      "refEvents": 835400,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "-"
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random-access",
+      "hypothesis": "H4",
+      "n": 1000,
+      "events": 1000,
+      "D": 0.0349,
+      "drift": -5.611,
+      "refEvents": 28621,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "≈0"
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random-access",
+      "hypothesis": "H4",
+      "n": 2000,
+      "events": 2000,
+      "D": 0.0316,
+      "drift": 1.163,
+      "refEvents": 63271,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "≈0"
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random-access",
+      "hypothesis": "H4",
+      "n": 5000,
+      "events": 5000,
+      "D": 0.028,
+      "drift": -0.083,
+      "refEvents": 178881,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "≈0"
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random-access",
+      "hypothesis": "H4",
+      "n": 10000,
+      "events": 10000,
+      "D": 0.0258,
+      "drift": -0.07,
+      "refEvents": 387705,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "≈0"
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random-access",
+      "hypothesis": "H4",
+      "n": 20000,
+      "events": 20000,
+      "D": 0.0239,
+      "drift": -0.522,
+      "refEvents": 835400,
+      "sampled": false,
+      "regime": "normal",
+      "driftSign": "≈0"
+    },
+    {
+      "workload": "self_join",
+      "family": "quadratic-overload",
+      "hypothesis": "H3",
+      "n": 1000,
+      "events": 2000000,
+      "D": 69.8788,
+      "drift": 45.247,
+      "refEvents": 28621,
+      "sampled": true,
+      "regime": "inflada",
+      "driftSign": "+"
+    },
+    {
+      "workload": "self_join",
+      "family": "quadratic-overload",
+      "hypothesis": "H3",
+      "n": 2000,
+      "events": 8000000,
+      "D": 126.4402,
+      "drift": 45.147,
+      "refEvents": 63271,
+      "sampled": true,
+      "regime": "inflada",
+      "driftSign": "+"
+    },
+    {
+      "workload": "self_join",
+      "family": "quadratic-overload",
+      "hypothesis": "H3",
+      "n": 5000,
+      "events": 50000000,
+      "D": 279.5154,
+      "drift": 44.812,
+      "refEvents": 178881,
+      "sampled": true,
+      "regime": "inflada",
+      "driftSign": "+"
+    },
+    {
+      "workload": "self_join",
+      "family": "quadratic-overload",
+      "hypothesis": "H3",
+      "n": 10000,
+      "events": 200000000,
+      "D": 515.8561,
+      "drift": 44.766,
+      "refEvents": 387705,
+      "sampled": true,
+      "regime": "inflada",
+      "driftSign": "+"
+    },
+    {
+      "workload": "self_join",
+      "family": "quadratic-overload",
+      "hypothesis": "H3",
+      "n": 20000,
+      "events": 800000000,
+      "D": 957.6251,
+      "drift": 45.067,
+      "refEvents": 835400,
+      "sampled": true,
+      "regime": "inflada",
+      "driftSign": "+"
+    }
+  ]
+}

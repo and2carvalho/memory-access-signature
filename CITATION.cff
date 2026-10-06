@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+type: software
+title: "(D, δ): a two-feature signature for memory-access traces"
+abstract: >-
+  A low-cost, calibration-free signature for memory-access traces of a logical array:
+  relative access density (D), information-equivalent to a normalized access count, and
+  index-trajectory drift (delta), the net direction of the access trajectory over time.
+  The pair flags O(n log n) to O(n^2) degradation of the same code without per-class
+  calibration. The repository provides TypeScript and Python implementations that
+  reproduce all results bit for bit, a deterministic corpus of seven sorting algorithms
+  across five problem sizes and three input patterns, a pre-registered cross-domain
+  validation on four non-sorting workloads, and a robustness analysis of the drift
+  feature.
+authors:
+  - family-names: "Antero de Carvalho"
+    given-names: "André Cunha"
+    affiliation: "Programa de Pós-Graduação em Ciência da Computação, Universidade Federal de Uberlândia (PPGCO/UFU)"
+    email: and2carvalho@gmail.com
+    orcid: "https://orcid.org/0009-0008-7737-9318"
+keywords:
+  - observability
+  - memory-access traces
+  - execution signatures
+  - performance degradation
+  - reproducibility
+  - pre-registration
+license:
+  - MIT
+  - CC-BY-4.0
+version: "0.1.0"
+repository-code: "https://github.com/and2carvalho/memory-access-signature"

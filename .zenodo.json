@@ -1,0 +1,23 @@
+{
+  "title": "(D, δ): a two-feature signature for memory-access traces",
+  "upload_type": "software",
+  "description": "<p>A low-cost, calibration-free signature for memory-access traces of a logical array: relative access density (D), information-equivalent to a normalized access count, and index-trajectory drift (&delta;), the net direction of the access trajectory over time. The pair flags O(n log n) &rarr; O(n<sup>2</sup>) degradation of the same code without per-class calibration.</p><p>The repository provides TypeScript and Python implementations that reproduce all results bit for bit, a deterministic corpus of seven sorting algorithms across five problem sizes and three input patterns, a pre-registered cross-domain validation on four non-sorting workloads, and a robustness analysis of the drift feature (order ablation, alternative estimators, sensitivity to analysis parameters, and the boundary of what two features can resolve).</p><p>Part of the author's master's research at PPGCO/UFU.</p>",
+  "creators": [
+    {
+      "name": "Antero de Carvalho, André Cunha",
+      "affiliation": "Programa de Pós-Graduação em Ciência da Computação, Universidade Federal de Uberlândia (PPGCO/UFU)",
+      "orcid": "0009-0008-7737-9318"
+    }
+  ],
+  "keywords": [
+    "observability",
+    "memory-access traces",
+    "execution signatures",
+    "performance degradation",
+    "reproducibility",
+    "pre-registration"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng"
+}

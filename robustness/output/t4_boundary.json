@@ -1,0 +1,39 @@
+{
+  "conflation_delta0": [
+    {
+      "workload": "radix",
+      "family": "multipass",
+      "delta_10bands": 3.09,
+      "rho1_64bands": 0.821
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random",
+      "delta_10bands": -0.07,
+      "rho1_64bands": 0.023
+    }
+  ],
+  "tent_zero_drift": [
+    {
+      "passes": 1,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.994,
+      "rho1_10bands": 0.743
+    },
+    {
+      "passes": 2,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.977,
+      "rho1_10bands": 0.194
+    },
+    {
+      "passes": 4,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.913,
+      "rho1_10bands": -0.852
+    }
+  ]
+}

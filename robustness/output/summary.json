@@ -1,0 +1,136 @@
+{
+  "corpus_cells": 93,
+  "ref_events_by_n": {
+    "2000": 63271,
+    "5000": 178881,
+    "10000": 387705,
+    "20000": 835400
+  },
+  "t1_spearman_mu_vs_ols": 0.48245405602597313,
+  "t1_spearman_half_vs_ols": 0.982659829123829,
+  "t1_separation": {
+    "d_ols": {
+      "mean_heapsort": -20.704922532253228,
+      "mean_merge_quick": 72.89366419005538,
+      "abs_diff": 93.5985867223086,
+      "pooled_std": 45.69374438162586,
+      "effect_size_diff_std": 2.0483895112773025
+    },
+    "mu": {
+      "mean_heapsort": 0.08948780138013802,
+      "mean_merge_quick": 0.49800302420242026,
+      "abs_diff": 0.40851522282228225,
+      "pooled_std": 0.19942848007725386,
+      "effect_size_diff_std": 2.048429706048169
+    },
+    "D": {
+      "mean_heapsort": 1.2476986368501826,
+      "mean_merge_quick": 0.8616587353787029,
+      "abs_diff": 0.3860399014714797,
+      "pooled_std": 0.22177990313749169,
+      "effect_size_diff_std": 1.7406441972884965
+    }
+  },
+  "t2_ablation_collapses": {
+    "heapsort/aleatorio": -145.23767535255104,
+    "merge/aleatorio": 378.40251542147286,
+    "quicksort/aleatorio": 314.9124529706379,
+    "insertion/inverso": 196.04836174365187,
+    "quicksort_naive/quase_ordenado": -179.90500541538256,
+    "radix/aleatorio": 12.183468005725059
+  },
+  "t3_band_sign_flips": 2,
+  "t3_band_zero_flips": 10,
+  "t3_reservoir": {
+    "self_join(n=20000)": [
+      {
+        "max_stored": 1000,
+        "events": 800000000,
+        "stored": 1000,
+        "drift": 41.492
+      },
+      {
+        "max_stored": 5000,
+        "events": 800000000,
+        "stored": 5000,
+        "drift": 46.629
+      },
+      {
+        "max_stored": 20000,
+        "events": 800000000,
+        "stored": 20000,
+        "drift": 45.972
+      },
+      {
+        "max_stored": 100000,
+        "events": 800000000,
+        "stored": 100000,
+        "drift": 45.067
+      }
+    ],
+    "heapsort(n=20000)": [
+      {
+        "max_stored": 1000,
+        "events": 1047566,
+        "stored": 1000,
+        "drift": -19.022
+      },
+      {
+        "max_stored": 5000,
+        "events": 1094504,
+        "stored": 5000,
+        "drift": -23.357
+      },
+      {
+        "max_stored": 20000,
+        "events": 1094504,
+        "stored": 20000,
+        "drift": -23.098
+      },
+      {
+        "max_stored": 100000,
+        "events": 1094504,
+        "stored": 100000,
+        "drift": -22.799
+      }
+    ]
+  },
+  "t4_tent": [
+    {
+      "passes": 1,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.994,
+      "rho1_10bands": 0.743
+    },
+    {
+      "passes": 2,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.977,
+      "rho1_10bands": 0.194
+    },
+    {
+      "passes": 4,
+      "events": 20000,
+      "delta_10bands": 0.007,
+      "rho1_64bands": 0.913,
+      "rho1_10bands": -0.852
+    }
+  ],
+  "t4_conflation": [
+    {
+      "workload": "radix",
+      "family": "multipass",
+      "delta_10bands": 3.09,
+      "rho1_64bands": 0.821
+    },
+    {
+      "workload": "hash_probe",
+      "family": "random",
+      "delta_10bands": -0.07,
+      "rho1_64bands": 0.023
+    }
+  ],
+  "total_seconds": 80.5
+}

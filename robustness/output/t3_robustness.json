@@ -1,0 +1,365 @@
+{
+  "band_stability": {
+    "bands": [
+      4,
+      8,
+      10,
+      16,
+      32,
+      64
+    ],
+    "per_cell": [
+      {
+        "algo": "insertion",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 97.688,
+          "8": 57.315,
+          "10": 47.231,
+          "16": 30.76,
+          "32": 15.9,
+          "64": 8.08
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "insertion",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": 189.229,
+          "8": 110.585,
+          "10": 91.053,
+          "16": 59.248,
+          "32": 30.612,
+          "64": 15.553
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "insertion",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": 73.805,
+          "8": 43.294,
+          "10": 35.664,
+          "16": 23.246,
+          "32": 12.011,
+          "64": 6.104
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "merge",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 160.142,
+          "8": 88.676,
+          "10": 72.929,
+          "16": 47.495,
+          "32": 24.505,
+          "64": 12.45
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "merge",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": 161.198,
+          "8": 89.438,
+          "10": 73.476,
+          "16": 47.828,
+          "32": 24.68,
+          "64": 12.546
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "merge",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": 153.698,
+          "8": 84.257,
+          "10": 69.116,
+          "16": 44.942,
+          "32": 23.242,
+          "64": 11.811
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "quicksort",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 153.223,
+          "8": 88.565,
+          "10": 71.268,
+          "16": 46.879,
+          "32": 24.175,
+          "64": 12.287
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "quicksort",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": 161.128,
+          "8": 89.475,
+          "10": 73.56,
+          "16": 47.927,
+          "32": 24.815,
+          "64": 12.601
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "quicksort",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": 165.36,
+          "8": 91.47,
+          "10": 75.125,
+          "16": 48.713,
+          "32": 25.222,
+          "64": 12.81
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "quicksort_naive",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 161.781,
+          "8": 93.494,
+          "10": 75.942,
+          "16": 49.645,
+          "32": 25.727,
+          "64": 13.076
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "quicksort_naive",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": -73.788,
+          "8": -43.418,
+          "10": -35.744,
+          "16": -23.288,
+          "32": -12.037,
+          "64": -6.116
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "quicksort_naive",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": 0.199,
+          "8": 0.128,
+          "10": 0.104,
+          "16": 0.069,
+          "32": 0.038,
+          "64": 0.02
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "heapsort",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": -40.002,
+          "8": -24.627,
+          "10": -20.487,
+          "16": -13.568,
+          "32": -7.053,
+          "64": -3.59
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "heapsort",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": -47.449,
+          "8": -29.155,
+          "10": -24.237,
+          "16": -15.987,
+          "32": -8.3,
+          "64": -4.223
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "heapsort",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": -28.189,
+          "8": -16.916,
+          "10": -13.893,
+          "16": -9.183,
+          "32": -4.788,
+          "64": -2.445
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "shellsort",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 27.729,
+          "8": 16.453,
+          "10": 10.789,
+          "16": 8.062,
+          "32": 4.167,
+          "64": 2.112
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "shellsort",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": 131.869,
+          "8": 77.66,
+          "10": 63.598,
+          "16": 41.395,
+          "32": 21.42,
+          "64": 10.87
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "shellsort",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": 26.886,
+          "8": 16.608,
+          "10": 16.666,
+          "16": 9.904,
+          "32": 5.126,
+          "64": 2.638
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "radix",
+        "pattern": "aleatorio",
+        "drift_by_bands": {
+          "4": 4.167,
+          "8": 3.473,
+          "10": 3.09,
+          "16": 2.107,
+          "32": 1.112,
+          "64": 0.569
+        },
+        "sign_flips_across_bands": false,
+        "zero_band_flips_across_bands": false
+      },
+      {
+        "algo": "radix",
+        "pattern": "quase_ordenado",
+        "drift_by_bands": {
+          "4": -25.003,
+          "8": 3.473,
+          "10": 2.909,
+          "16": 2.758,
+          "32": 1.628,
+          "64": 0.847
+        },
+        "sign_flips_across_bands": true,
+        "zero_band_flips_across_bands": true
+      },
+      {
+        "algo": "radix",
+        "pattern": "inverso",
+        "drift_by_bands": {
+          "4": -25.003,
+          "8": 3.473,
+          "10": 2.909,
+          "16": 2.758,
+          "32": 1.628,
+          "64": 0.847
+        },
+        "sign_flips_across_bands": true,
+        "zero_band_flips_across_bands": true
+      }
+    ],
+    "n_cells": 21,
+    "n_sign_flips_across_bands": 2,
+    "n_zero_band_flips_across_bands": 10
+  },
+  "reservoir": {
+    "self_join(n=20000)": [
+      {
+        "max_stored": 1000,
+        "events": 800000000,
+        "stored": 1000,
+        "drift": 41.492
+      },
+      {
+        "max_stored": 5000,
+        "events": 800000000,
+        "stored": 5000,
+        "drift": 46.629
+      },
+      {
+        "max_stored": 20000,
+        "events": 800000000,
+        "stored": 20000,
+        "drift": 45.972
+      },
+      {
+        "max_stored": 100000,
+        "events": 800000000,
+        "stored": 100000,
+        "drift": 45.067
+      }
+    ],
+    "heapsort(n=20000)": [
+      {
+        "max_stored": 1000,
+        "events": 1047566,
+        "stored": 1000,
+        "drift": -19.022
+      },
+      {
+        "max_stored": 5000,
+        "events": 1094504,
+        "stored": 5000,
+        "drift": -23.357
+      },
+      {
+        "max_stored": 20000,
+        "events": 1094504,
+        "stored": 20000,
+        "drift": -23.098
+      },
+      {
+        "max_stored": 100000,
+        "events": 1094504,
+        "stored": 100000,
+        "drift": -22.799
+      }
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "generatedAt": "2026-10-06T21:40:02.325655+00:00",
+  "source": "output/atlas.json",
+  "model": "log10 D = log10 C + nu * log10 n",
+  "n_values": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "reference_note": "D is normalized by an O(n log n) reference; the expected exponent of an O(n^2) workload under this ratio is nu(n/log2 n), not 1.0.",
+  "expected_quadratic_nu": 0.8798,
+  "expected_quadratic_r2": 1.0,
+  "expected_linear_nu": -0.1202,
+  "rows": [
+    {
+      "algo": "heapsort",
+      "pattern": "aleatorio",
+      "nu": 0.0078,
+      "ci95": 0.0015,
+      "r2": 0.9888,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "heapsort",
+      "pattern": "inverso",
+      "nu": 0.0166,
+      "ci95": 0.0038,
+      "r2": 0.9849,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "heapsort",
+      "pattern": "quase_ordenado",
+      "nu": 0.0051,
+      "ci95": 0.0021,
+      "r2": 0.9549,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "insertion",
+      "pattern": "aleatorio",
+      "nu": 0.8803,
+      "ci95": 0.005,
+      "r2": 1.0,
+      "n_points": 5,
+      "regime": "inflated (~quadratic)"
+    },
+    {
+      "algo": "insertion",
+      "pattern": "inverso",
+      "nu": 0.8739,
+      "ci95": 0.0133,
+      "r2": 0.9999,
+      "n_points": 5,
+      "regime": "inflated (~quadratic)"
+    },
+    {
+      "algo": "insertion",
+      "pattern": "quase_ordenado",
+      "nu": -0.112,
+      "ci95": 0.0155,
+      "r2": 0.9944,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "merge",
+      "pattern": "aleatorio",
+      "nu": -0.0003,
+      "ci95": 0.0004,
+      "r2": 0.7119,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "merge",
+      "pattern": "inverso",
+      "nu": -0.0028,
+      "ci95": 0.0021,
+      "r2": 0.8625,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "merge",
+      "pattern": "quase_ordenado",
+      "nu": -0.0064,
+      "ci95": 0.0026,
+      "r2": 0.9542,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "quicksort",
+      "pattern": "aleatorio",
+      "nu": 0.016,
+      "ci95": 0.0239,
+      "r2": 0.6019,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "quicksort",
+      "pattern": "inverso",
+      "nu": 0.0402,
+      "ci95": 0.0067,
+      "r2": 0.9919,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "quicksort",
+      "pattern": "quase_ordenado",
+      "nu": -0.0138,
+      "ci95": 0.0087,
+      "r2": 0.8954,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "quicksort_naive",
+      "pattern": "aleatorio",
+      "nu": 0.0303,
+      "ci95": 0.0532,
+      "r2": 0.5217,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "quicksort_naive",
+      "pattern": "inverso",
+      "nu": 0.8733,
+      "ci95": 0.0137,
+      "r2": 0.9999,
+      "n_points": 5,
+      "regime": "inflated (~quadratic)"
+    },
+    {
+      "algo": "quicksort_naive",
+      "pattern": "quase_ordenado",
+      "nu": 0.8707,
+      "ci95": 0.0161,
+      "r2": 0.9999,
+      "n_points": 5,
+      "regime": "inflated (~quadratic)"
+    },
+    {
+      "algo": "radix",
+      "pattern": "aleatorio",
+      "nu": -0.1265,
+      "ci95": 0.0136,
+      "r2": 0.9966,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "radix",
+      "pattern": "inverso",
+      "nu": -0.1265,
+      "ci95": 0.0133,
+      "r2": 0.9968,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "radix",
+      "pattern": "quase_ordenado",
+      "nu": -0.1265,
+      "ci95": 0.0133,
+      "r2": 0.9968,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    },
+    {
+      "algo": "shellsort",
+      "pattern": "aleatorio",
+      "nu": 0.1377,
+      "ci95": 0.0169,
+      "r2": 0.9956,
+      "n_points": 5,
+      "regime": "intermediate"
+    },
+    {
+      "algo": "shellsort",
+      "pattern": "inverso",
+      "nu": 0.0213,
+      "ci95": 0.1759,
+      "r2": 0.0471,
+      "n_points": 5,
+      "regime": "intermediate"
+    },
+    {
+      "algo": "shellsort",
+      "pattern": "quase_ordenado",
+      "nu": -0.111,
+      "ci95": 0.0196,
+      "r2": 0.9908,
+      "n_points": 5,
+      "regime": "constant (O(n log n))"
+    }
+  ]
+}

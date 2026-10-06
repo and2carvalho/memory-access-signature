@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    name: Type check and reproduce published results
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          pip install -r requirements.txt
+
+      - name: Type check (TypeScript)
+        run: npm run typecheck
+
+      - name: Numba kernels vs pure-Python port (bit-exact)
+        run: python python/verify_kernels.py
+
+      - name: Regenerate output/*.json with both implementations and compare
+        run: python python/check_reproduction.py
+
+      - name: Analysis scripts run end to end
+        run: |
+          python analysis/signature_analysis.py
+          python analysis/scaling_exponent.py
